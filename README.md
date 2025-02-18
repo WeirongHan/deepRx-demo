@@ -7,7 +7,7 @@ Backend:
 - python manage.py runserver
 
 Frontend: 
-- npm create vite@latest frontend -- --template react
+- npm create vite@latest frontend -- --template react (probably dont need this if not starting from scratch)
 - cd frontend
 - npm install axios react-router-dom jwt-decode
 - npm run dev    
