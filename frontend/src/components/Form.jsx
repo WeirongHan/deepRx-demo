@@ -13,6 +13,7 @@ function Form({route, method}) {
     const navigate = useNavigate()
 
     const name = method === "login" ? "login" : "register"
+    const other = method === "login" ? "register" : "login"
     const handleSubmit = async (e) => {
         setLoading(true)
         // prevent reload page
@@ -23,7 +24,7 @@ function Form({route, method}) {
             setLoading(false);
             return;
         }
-        
+
         try{
             const res = await api.post(route, { username, password });
             if (method === "login") {
@@ -46,6 +47,7 @@ function Form({route, method}) {
         <input className="form-input" type="password"  value={password} onChange={(e) => setPassword(e.target.value)} placeholder="Password"/>
         {loading && <LoadingIndicator />}
         <button className="form-button" type="submit"> {name} </button>
+        <button className="form-button" type="submit" onClick={(e) => { e.preventDefault(); navigate(`/${other}`); }}> {other}</button>
     </form>
 }
 

@@ -10,7 +10,7 @@
   }
   
   .patient-rna-sequence {
-    color: #666;
+    color: #333;
   }
   
   .note-date {
@@ -28,6 +28,16 @@
     transition: background-color 0.3s;
   }
   
+  .run-diagnose-button {
+    background-color: #0056b3; /* Blue */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
   .delete-button:hover {
     background-color: #d32f2f; /* Darker red */
   }
