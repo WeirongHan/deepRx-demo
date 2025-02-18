@@ -11,3 +11,6 @@ Frontend:
 - cd frontend
 - npm install axios react-router-dom jwt-decode
 - npm run dev    
+
+
+![image](https://github.com/user-attachments/assets/3a8a1c09-2e74-4e7a-bb45-0281c068be9f)
