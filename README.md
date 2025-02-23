@@ -1,16 +1,25 @@
-Backend:
-- python3 -m venv env
-- source env/bin/activate 
-- pip install -r requirements.txt
-- python manage.py makemigrations
-- python manage.py migrate
-- python manage.py runserver
+## Setup
+### 1. Backend
 
-Frontend: 
-- npm create vite@latest frontend -- --template react (probably dont need this if not starting from scratch)
-- cd frontend
-- npm install axios react-router-dom jwt-decode
-- npm run dev    
+- **Install Dependencies**:  
+  - cd frontend
+  - python3 -m venv env
+  - source env/bin/activate
+  - pip install -r requirements.txt
+- **DB Migration**: 
+  - python manage.py makemigrations
+  - python manage.py migrate
+- **Start Backend Server**:  
+  - python manage.py runserver
+
+### 2. Frontend
+- **Install Dependencies**:  
+  - cd frontend
+  - npm install
+  - npm install axios react-router-dom jwt-decode
+- **Start Frontend Server**:  
+  - npm run dev
+
 
 
 ![image](https://github.com/user-attachments/assets/3a8a1c09-2e74-4e7a-bb45-0281c068be9f)
