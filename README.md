@@ -5,8 +5,10 @@
   - cd backend
   - python3 -m venv env
   - source env/bin/activate
+  - cd backend
   - pip install -r requirements.txt
 - **DB Migration**: 
+  - cd ..
   - python manage.py makemigrations
   - python manage.py migrate
 - **Start Backend Server**:  
